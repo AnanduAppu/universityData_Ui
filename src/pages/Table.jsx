@@ -83,7 +83,7 @@ function Table() {
                 
                       </select>
                     </td>
-                    <td className="px-6 py-4">{ele.DOB}/10</td>
+                    <td className="px-6 py-4">{ele.DOB}</td>
                     <td className="px-6 py-4">{ele.rating}/10</td>
                   </tr>
                 ))}
