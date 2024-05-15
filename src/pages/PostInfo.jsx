@@ -92,7 +92,7 @@ function PostInfo() {
                     htmlFor="date"
                     className="mb-3 block text-base font-medium text-black"
                   >
-                    Date
+                    Date of Birth
                   </label>
                   <input
                     onChange={(e) => setDate(e.target.value)}
