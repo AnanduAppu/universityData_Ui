@@ -58,6 +58,9 @@ function Table() {
                   Subjets
                 </th>
                 <th scope="col" className="px-6 py-3">
+                 D-O-B
+                </th>
+                <th scope="col" className="px-6 py-3">
                   Rating
                 </th>
               </tr>
@@ -80,6 +83,7 @@ function Table() {
                 
                       </select>
                     </td>
+                    <td className="px-6 py-4">{ele.DOB}/10</td>
                     <td className="px-6 py-4">{ele.rating}/10</td>
                   </tr>
                 ))}
