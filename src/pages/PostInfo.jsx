@@ -38,7 +38,7 @@ function PostInfo() {
         name,university,Date,rating,Subjects
     }
     try {
-        const response = await axios.post("http://localhost:3211/user/addData",obj)
+        const response = await axios.post(" https://backend-unversitydata.onrender.com/user/addData",obj)
         if(response.data.success){
             alert("data updated")
           
