@@ -6,8 +6,8 @@ import axios from 'axios';
 
 function App() {
 
-  //axios.defaults.baseURL="https://backend-unversitydata.onrender.com/";
-  axios.defaults.baseURL = "http://localhost:3211/";
+  axios.defaults.baseURL="https://backend-unversitydata.onrender.com/";
+  //axios.defaults.baseURL = "http://localhost:3211/";
 
   return (
     <>
