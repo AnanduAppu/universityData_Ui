@@ -16,7 +16,7 @@ function Table() {
     const fetchData = async () => {
        
       try {
-        const response = await axios.get(" https://backend-unversitydata.onrender.com/user/getData");
+        const response = await axios.get("user/getData");
         if (response.data.success) {
           setData(response.data.Data);
           setDataMod(response.data.Data)

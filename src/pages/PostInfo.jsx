@@ -37,8 +37,10 @@ function PostInfo() {
     const obj = {
         name,university,Date,rating,Subjects
     }
+
+    console.log(obj)
     try {
-        const response = await axios.post(" https://backend-unversitydata.onrender.com/user/addData",obj)
+        const response = await axios.post("user/addData",obj)
         if(response.data.success){
             alert("data updated")
           
@@ -56,7 +58,7 @@ function PostInfo() {
       <h1 className="text-black text-center text-3xl font-bold mt-9">
         Update University
       </h1>
-      <div className="flex items-center justify-center p-12 items-center">
+      <div className="flex justify-center p-12 items-center">
         <div className="mx-auto w-full max-w-[550px] bg-white">
           <form>
             <div className="mb-5">
@@ -191,7 +193,7 @@ function PostInfo() {
               <input type="checkbox" onChange={handleCheckboxChange} value="others" />
               <label
                 for="default-checkbox"
-                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 others
               </label>
